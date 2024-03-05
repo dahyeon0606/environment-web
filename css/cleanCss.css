@@ -1,0 +1,53 @@
+
+/*초기화*/
+*{
+    margin:0; padding:0;
+    font-family:'맑은 고딕','Malgun Gothic',sans-serif;
+}
+
+a{text-decoration:none;}
+li{list-style:none;}
+
+/*페이지 구성*/
+body{
+    width:1300px; 
+    margin: 20px auto;
+}
+
+/*내비게이션*/
+#main-navigation{ 
+    overflow:hidden; /*수평 정렬*/
+
+    position:fixed; /*고정 위치 바*/
+    left:0; top:0; right:0;
+    height:80px;
+    background-color:#74db76;
+}  
+
+.outer-menu-item{
+    float:right;
+    text-align:center;
+    margin: 0 30px;
+}
+.menu-title{
+    font-weight:900;
+    font-size:20px;
+}
+
+.outer-menu-item:nth-child(2n) a:hover{
+    color:rgb(14, 129, 174);
+    font-weight:bold;
+}
+.outer-menu-item:nth-child(2n+1) a:hover{
+    color:green;
+    font-weight:bold;
+}
+
+#content{
+    margin-top:80px;
+}
+
+.outer-menu-home{ /*메인화면으로 돌아가는 기능*/
+    float:left;
+    margin:20px 0 0 20px;
+}

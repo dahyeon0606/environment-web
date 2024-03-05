@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>재활용 방법</title>
+        <link rel="stylesheet" href="css/recycleCss.css">
+        <script src="js/recycleJs.js"></script>
+    </head>
+    <body>
+         <!--헤더-->
+         <header id="main-header">
+            <h1 id="title">올바른 쓰레기 재활용 방법</h1>
+        </header>
+
+        <!--내비게이션-->
+        <nav id="main-navigation">
+            <nav id="main-navigation">
+                <div class="pull-right">
+                    <ul class="outer-menu">
+                        <li class="outer-menu-home">
+                            <a href="index.html"><img src="image/planet-earth.png" width="40" height="40"></a>
+                        </li>
+                        <li class="outer-menu-item">
+                            <span class="menu-title">환경 관련 활동</span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="campaign.html">환경 단체</a></li>
+                            </ul>
+                        </li>
+                        <li class="outer-menu-item">
+                            <span class="menu-title">친환경 팁</span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="recycle.html">재활용 방법</a></li>
+                                <li class="inner-menu-item"><a href="clean.html">청소 방법</a></li>
+                            </ul>
+                        </li>
+                        <li class="outer-menu-item">
+                            <span class="menu-title">최신 뉴스</span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="koNews.html">국내</a></li>
+                                <li class="inner-menu-item"><a href="enNews.html">국외</a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+
+        <!--본문-->
+        <section id="main-section">
+            <div id="container">
+                <div class="paper">
+                    <img id="i1">
+                    <h3>신문지는 적당히 묶어서 내놓는다.<br>비닐코팅된 책의 겉표지는 떼어서 버린다.<br>우유곽은 깨끗이 씻어 말린다.</h3>
+                </div>
+                <div class="glass">
+                    <img id="i2">
+                    <h3>유리병 뚜껑을 함께 버리지 않는다.<br>병의 색깔을 구별하여 버린다.<br>병 속에 이물질을 버리지 않는다.</h3>
+                </div>
+                <div class="plastic">
+                    <img id="i3">
+                    <h3>부착색상표는 떼어 버린다.<br>재활용 표시를 확인한다.<br>포장한 스티로폼은 판매자가 직접 가져간다.</h3>
+                </div>
+                <div class="can">
+                    <img id="i4">
+                    <h3>캔 뚜껑은 캔 속에 넣어 버린다.<br>가스통은 구멍을 뚫은 뒤 압축하여 버린다.</h3>
+                </div>
+            </div>
+
+            <article id="quiz">
+                <h1 id="title">재활용 퀴즈를 풀고 정답을 확인하세요!</h1>
+                <form method="post">
+                    
+                        <table>
+                            
+                        <tr>
+                            <td colspan="2"><h3 class="article-title">Q1. 화분은 일반 쓰레기다, 아니다?</h3></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="q1" value="O"> O</td>
+                            <td><input type="radio" name="q1" value="X"> X</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"> <h3 class="article-title">Q2. 고추장, 간장, 쌈장 등 장류는 음식물 쓰레기다, 아니다?</h3></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="q2" value="O"> O</td>
+                            <td><input type="radio" name="q2" value="X"> X</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><h3 class="article-title">Q3. 칫솔은 플라스틱 재활용 쓰레기다, 아니다?</h3></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="q3" value="O"> O</td>
+                            <td> <input type="radio" name="q3" value="X"> X</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><h3 class="article-title">Q4. 도자기, 사기는 재활용 쓰레기다, 아니다?</h3></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="q4" value="O"> O</td>
+                            <td><input type="radio" name="q4" value="X"> X</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="button" onclick="checkQuiz()">정답 확인</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div id="answer"></div></td>
+                        </tr>
+                   
+                    </table>
+
+            </form>
+                
+            </article>
+        </section>
+
+         <!--푸터-->
+         <footer id="main-footer">
+            <hr>
+            <a>© 2023. Created by 컴퓨터공학과, 2반, 20220878, 하다현 | E-mail: hada3817@gmail.com </a>
+        </footer>
+    </body>
+</html>

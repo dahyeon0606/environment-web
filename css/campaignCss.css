@@ -1,0 +1,165 @@
+
+/*초기화*/
+*{
+    margin:0; padding:0;
+    font-family:'맑은 고딕','Malgun Gothic',sans-serif;
+}
+
+a{text-decoration:none;}
+li{list-style:none;}
+
+/*페이지 구성*/
+body{
+    width:1300px; 
+    margin: 20px auto;
+    background-image: url('/web/image/body.jpg');
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position:0 0;
+}
+
+/*헤더 구성*/
+.master-title{
+    font-size:40px;
+    font-style:italic;
+
+    color:black;
+    text-align:center;
+    margin-top:90px;
+}
+
+/*내비게이션*/
+#main-navigation{ 
+    overflow:hidden; /*수평 정렬*/
+
+    position:fixed; /*고정 위치 바*/
+    left:0; top:0; right:0;
+    height:80px;
+    background-color: rgb(60, 116, 176);
+}  
+
+.outer-menu-item{
+    float:right;
+    text-align:center;
+    margin: 0 30px;
+}
+.menu-title{
+    font-weight:900;
+    font-size:20px;
+}
+
+.outer-menu-item:nth-child(2n) a:hover{
+    color:skyblue;
+    font-weight:bold;
+}
+.outer-menu-item:nth-child(2n+1) a:hover{
+    color:green;
+    font-weight:bold;
+}
+
+#content{
+    margin-top:80px;
+}
+
+.outer-menu-home{ /*메인화면으로 돌아가는 기능*/
+    float:left;
+    margin:20px 0 0 20px;
+}
+
+/*본문 - 환경 단체*/
+#article-name{
+    font-size: 30px;
+    color:rgb(10, 89, 173);
+}
+
+#main-section{ /*one true 레이아웃*/
+    overflow:hidden;
+}
+
+#one, #two, #three, #four{
+    float:left;
+    width:260px; /*부모의 전체 너비가 1300px이기 때문에 모두 합하여 비슷한 수가 나오도록 너비,패딩,마진을 맞춤  */
+    margin:50px 10px;
+    padding:20px;
+    border-radius:8px;
+    height: 180px;
+    
+    /*그레디언트 생성기 사용*/
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6db3f2+0,54a3ee+29,1e69de+66,1e69de+99 */
+    background: linear-gradient(to bottom,  rgba(109,179,242,0.3) 0%,rgba(84,163,238,0.3) 29%,rgba(30,105,222,0.5) 66%,rgba(30,105,222,0.3) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    box-shadow: 3px 3px 3px gray;
+} 
+
+.article-body{
+    text-align:justify;
+    font-size:20px;
+}
+
+.article-header{
+    font-size:30px;
+    color:rgb(69, 69, 69);
+}
+
+
+/*본문 - 환경 단체 캠페인*/
+#side-section{
+    margin:150px 0;
+}
+.ellipsis{
+    width:1300px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+#article-one h1,p{
+    margin:30px 0;
+}
+
+.article-two{
+    margin:150px 0;
+    text-align:center;
+}
+
+input[type="text"]{ /*속성 선택자*/
+    border-radius:20px;
+    width:300px;
+    height:50px;
+    font-size:20px;
+}
+
+input[type="submit"]{
+    border-radius:20px;
+    width:300px;
+    height:50px;
+    background-color: rgb(102, 143, 224);
+    font-size:20px;
+}
+
+input:focus{ /*상태 선택자*/
+    background-color: rgb(10, 89, 173);
+}
+
+table *{
+    display:block;
+    text-align:center;
+    margin: 30px 0;
+}
+
+.article-body2{ /*절대 위치 배치*/
+    position:relative;
+    height:30px;
+}
+
+table{
+    position:absolute;
+    left:450px;
+    top:30px;
+}
+
+/*푸터*/
+
+#main-footer {
+    margin-top:600px;
+    
+}

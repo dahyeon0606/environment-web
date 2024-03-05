@@ -1,0 +1,86 @@
+/*초기화*/
+*{
+    margin:0; padding:0;
+    font-family:'맑은 고딕','Malgun Gothic',sans-serif;
+}
+
+a{text-decoration:none;}
+li{list-style:none;}
+
+/*페이지 구성*/
+body{
+    width:1300px; 
+    margin: 20px auto;
+}
+
+/*내비게이션*/
+#main-navigation{ 
+    overflow:hidden; /*수평 정렬*/
+
+    position:fixed; /*고정 위치 바*/
+    left:0; top:0; right:0;
+    height:80px;
+    background-color: #f0d95d;
+    z-index:100;
+}  
+
+.outer-menu-item{
+    float:right;
+    text-align:center;
+    margin: 0 30px;
+}
+.menu-title{
+    font-weight:900;
+    font-size:20px;
+}
+
+.outer-menu-item:nth-child(2n) a:hover{
+    color:skyblue;
+    font-weight:bold;
+}
+.outer-menu-item:nth-child(2n+1) a:hover{
+    color:green;
+    font-weight:bold;
+}
+
+#content{
+    margin-top:80px;
+}
+
+.outer-menu-home{ /*메인화면으로 돌아가는 기능*/
+    float:left;
+    margin:20px 0 0 20px;
+}
+
+/*본문*/
+#image{
+    position:absolute; /*요소의 중앙 배치*/
+    left:50%;
+    margin-left:-300px; /*이미지의 너비가 600px*/
+    z-index:1;
+}
+
+#parent{ /*one true 레이아웃*/
+    overflow: hidden;
+}
+
+.left{
+    float:left;
+    width:860px; /*부모의 전체 너비가 1300px이기 때문에 모두 합하여 비슷한 수가 나오도록 너비,마진을 맞춤  */
+}
+
+#main-aside{
+    float:right;
+    width:400px;
+    margin:70px 0 0 20px;
+}
+
+.aside-list a:hover{ /*반응 선택자*/
+    font-weight:bold;
+}
+
+/*푸터*/
+#main-footer {
+    margin-top:600px;
+    
+}

@@ -1,0 +1,132 @@
+
+/*초기화*/
+*{
+    margin:0; padding:0;
+    font-family:'맑은 고딕','Malgun Gothic',sans-serif;
+}
+
+a{text-decoration:none;}
+li{list-style:none;}
+
+/*페이지 구성*/
+body{
+    width:1300px; /*중앙 정렬*/
+    margin: 20px auto;
+    background-image: url('/web/image/header.jpg');
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position:0 0;
+}
+
+/*헤더 구성*/
+.site-name{
+    font-size:40px;
+    font-style:italic;
+    line-height:150px;
+    color:aliceblue;
+}
+
+/*내비게이션*/
+#main-navigation{ 
+    overflow:hidden; /*수평 정렬*/
+    margin:90px 0 10px 0;
+}  
+
+.outer-menu-item{
+    float:right;
+    text-align:center;
+    margin: 0 30px;
+}
+.menu-title{
+    font-weight:900;
+    font-size:20px;
+}
+
+.outer-menu-item:nth-child(2n+1) a:hover{ /*반응 선택자, 구조 선택자,후손 선택자*/
+    color:skyblue;
+    font-weight:bold;
+}
+.outer-menu-item:nth-child(2) a:hover{
+    color:green;
+    font-weight:bold;
+}
+
+/*본문 - 사이트 소개 글*/
+.one-article, .two-article{
+    border:1px solid white;
+    border-radius:20px;
+    margin:100px 0;
+    height:480px;
+    background-color: rgb(8, 92, 11,0.3);
+    text-align:center;
+}
+
+.master-title{
+    font-size: 40px;
+    color:white;
+    text-shadow:5px 5px 5px black;
+    line-height:250px; /*수직 중앙 정렬*/
+}
+.master-data{
+    color:white;
+    font-size: 24px;
+    margin:0 20px;
+    text-shadow: 1px 1px 1px gray;
+}
+.one-article:hover{
+    background-image:url('/web/image/one.jpg');
+    background-size: 100%;
+    background-position:0;
+    background-repeat: no-repeat;
+}
+
+.two-article:hover{
+    background-image:url('/web/image/two.jpg');
+    background-size: 100% 480px;
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+
+/*본문 - 사이트 내용*/
+#main-section{ /*one true 레이아웃*/
+    overflow:hidden;
+}
+
+.three,.four,.five{
+    float:left;
+    width:373px; /*부모의 전체 너비가 1300px이기 때문에 모두 합하여 비슷한 수가 나오도록 너비,패딩,마진을 맞춤  */
+    margin:50px 10px;
+    padding:20px;
+    border-radius:8px;
+    height:450px;
+    
+    /*그레디언트 생성기 사용*/
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6db3f2+0,54a3ee+29,1e69de+66,1e69de+99 */
+    background: linear-gradient(to bottom,  rgba(109,179,242,0.3) 0%,rgba(84,163,238,0.3) 29%,rgba(30,105,222,0.5) 66%,rgba(30,105,222,0.3) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    box-shadow: 3px 3px 3px gray;
+} 
+
+.article-body{
+    text-align:justify;
+}
+
+#title{
+    display:block; /*앵커 태그는 인라인 형태이기때문에 글자 중앙 정렬이 되지 않아, 가시 속성을 변경 해줌*/
+    text-align: center;
+    margin-top:130px;
+}
+
+#title > a{
+    font-size:32px;
+    font-weight:bold;
+    color:rgba(30,105,222,0.8);
+}
+
+.href{
+    width:380px;
+    height:30px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color:#8cadf5;
+    background-color: #8cadf5;
+}
